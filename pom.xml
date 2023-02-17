@@ -25,6 +25,11 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-numbers-primes</artifactId>
+      <version>1.1</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -71,5 +76,18 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <mainClass>is.hi.vmt7.hbv202g.ass4.App</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
+
+
+
 </project>
